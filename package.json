@@ -1,0 +1,36 @@
+{
+  "name": "opencode-lms",
+  "version": "0.1.0",
+  "description": "opencode plugin that discovers LM Studio models and configures local model metadata.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": "./index.js",
+  "files": [
+    "index.js",
+    "internal.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "opencode",
+    "lmstudio",
+    "plugin",
+    "llm",
+    "local-ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvego/opencode-lms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alvego/opencode-lms/issues"
+  },
+  "homepage": "https://github.com/alvego/opencode-lms#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
