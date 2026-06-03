@@ -73,6 +73,8 @@ Existing user-defined model metadata is preserved. The plugin fills missing fiel
 
 ## Development
 
+Contributor notes and the release checklist are in [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ```sh
 npm test
 npm pack --dry-run
