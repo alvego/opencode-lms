@@ -2,6 +2,8 @@
 
 An [opencode](https://opencode.ai/) plugin that discovers locally served [LM Studio](https://lmstudio.ai/) models and updates the `lmstudio` provider metadata.
 
+Published npm package: [`opencode-lms`](https://www.npmjs.com/package/opencode-lms)
+
 The plugin calls LM Studio's `/api/v1/models` endpoint, filters LLM models, and fills in model context limits, modalities, and reasoning metadata where LM Studio exposes it.
 
 ## Requirements
@@ -12,21 +14,21 @@ The plugin calls LM Studio's `/api/v1/models` endpoint, filters LLM models, and 
 
 ## Installation
 
-```sh
-npm install -g opencode-lms
-```
+Use the published npm package through your opencode plugin configuration. You do not need to manually install it globally.
 
-Or install it in the project where you run opencode:
+Add the package name to your opencode config:
 
-```sh
-npm install --save-dev opencode-lms
+```jsonc
+{
+  "plugin": ["opencode-lms"]
+}
 ```
 
 ## Configuration
 
-Add the plugin to your opencode config:
+Full config example:
 
-```json
+```jsonc
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": ["opencode-lms"]
@@ -35,7 +37,7 @@ Add the plugin to your opencode config:
 
 With options:
 
-```json
+```jsonc
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
